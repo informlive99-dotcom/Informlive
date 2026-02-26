@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact & Join Us</title>
+    <style>
+        /* Aapki website ki asli theme: Light Grey Background */
+        body {
+            background-color: #f4f4f4; /* Light Grey Background */
+            color: #333; /* Dark text for readability */
+            font-family: 'Segoe UI', Arial, sans-serif;
+            margin: 0;
+            padding: 40px 20px;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            background-color: #ffffff; /* White card for the form */
+            max-width: 500px;
+            width: 100%;
+            padding: 40px;
+            border-radius: 15px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+
+         /* --- Stylish Cursive Logo (Inform Style) --- */
+        .logo {
+            /* Mistral font image ke jaisa cursive look deta hai */
+            font-family: 'Mistral', 'Brush Script MT', cursive; 
+            font-size: 45px;
+            color: #ff6e00; /*  Orange color */
+            text-decoration: none;
+            cursor: pointer;
+            line-height: 1;
+        }
+
+        h1 {
+            font-size: 24px;
+            color: #222;
+            margin-bottom: 10px;
+        }
+
+        p {
+            color: #666;
+            margin-bottom: 30px;
+            font-size: 15px;
+        }
+
+        .form-group {
+            text-align: left;
+            margin-bottom: 20px;
+        }
+
+        label {
+            display: block;
+            margin-bottom: 8px;
+            font-weight: 600;
+            font-size: 14px;
+        }
+
+        input, textarea, select {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 8px;
+            font-size: 16px;
+            box-sizing: border-box;
+            background-color: #fafafa;
+        }
+
+        input:focus {
+            border-color: #007bff;
+            outline: none;
+            background-color: #fff;
+        }
+
+        /* Submit Button */
+        .submit-btn {
+            background-color: #333; /* Dark Button */
+            color: white;
+            padding: 14px;
+            border: none;
+            border-radius: 8px;
+            font-size: 16px;
+            font-weight: bold;
+            cursor: pointer;
+            width: 100%;
+            transition: 0.3s;
+        }
+
+        .submit-btn:hover {
+            background-color: #000;
+        }
+
+        .footer-link {
+            margin-top: 25px;
+            display: block;
+            text-decoration: none;
+            color: #333;
+            font-size: 14px;
+	    font-weight:bold;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+		
+      <div class="logo">Inform</div>
+        
+        <h1>Join Us</h1>
+
+        <form action="#">
+            <div class="form-group">
+                <label>Your Name</label>
+                <input type="text" placeholder="Name" required>
+            </div>
+
+            <div class="form-group">
+                <label>Email ID</label>
+                <input type="email" placeholder="email@example.com" required>
+            </div>
+
+            <div class="form-group">
+                <label>Phone Number</label>
+                <input type="tel" placeholder="Mobile number">
+            </div>
+
+            <div class="form-group">
+                <label>How do you want to join us?</label>
+                <select>
+                    <option>Hiring / Job</option>
+                    <option>Freelancing</option>
+                    <option>Any Question (Inquiry)</option>
+                </select>
+            </div>
+
+            <div class="form-group">
+                <label>Message</label>
+                <textarea rows="4" placeholder="Message..."></textarea>
+            </div>
+
+            <button type="submit" class="submit-btn">SEND MESSAGE</button>
+        </form>
+
+        <a href="index.html" class="footer-link">←Go back to home page</a>
+    </div>
+
+</body>
+</html>

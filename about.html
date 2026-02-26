@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us | Digital Service Provider</title>
+    <style>
+
+/* Navigation Bar */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            padding: 25px 10%;
+            align-items: center;
+        }
+
+        /* --- Stylish Cursive Logo (Inform Style) --- */
+        .logo {
+            /* Mistral font image ke jaisa cursive look deta hai */
+            font-family: 'Mistral', 'Brush Script MT', cursive; 
+            font-size: 45px;
+            color: #ff6e00; /*  Orange color */
+            text-decoration: none;
+            cursor: pointer;
+            line-height: 1;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #ff6e00;
+            margin-left: 25px;
+            font-size: 18px;
+            transition: 0.3s;
+	    font weight:900;
+        }
+
+        .nav-links a:hover {
+            color: #A9A9A9;
+        }
+
+        :root {
+            --hot-orange: #FF4500;
+            --light-grey: #f4f4f4;
+            --dark-grey: #333;
+            --white: #ffffff;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--light-grey);
+            color: var(--dark-grey);
+            line-height: 1.6;
+        }
+
+        /* Hero Section */
+        .about-hero {
+            background-color: var(--white);
+            padding: 80px 20px;
+            text-align: center;
+            border-bottom: 5px solid var(--hot-orange);
+        }
+
+        .about-hero h1 {
+            font-size: 3rem;
+            margin: 0;
+            color: var(--dark-grey);
+        }
+
+        .about-hero span {
+            color: var(--hot-orange);
+        }
+
+        .about-hero p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 20px auto;
+            color: #666;
+        }
+
+        /* Main Content Section */
+        .container {
+            max-width: 1100px;
+            margin: 50px auto;
+            padding: 0 20px;
+        }
+
+        .content-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 40px;
+            align-items: center;
+        }
+
+        .about-text h2 {
+            font-size: 2rem;
+            border-left: 5px solid var(--hot-orange);
+            padding-left: 15px;
+            margin-bottom: 20px;
+        }
+
+        .about-text p {
+            margin-bottom: 20px;
+            font-size: 1.1rem;
+        }
+
+        /* Mission & Mission Box */
+        .mission-box {
+            background-color: var(--hot-orange);
+            color: var(--white);
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 20px rgba(255, 69, 0, 0.2);
+        }
+
+        .mission-box h3 { margin-top: 0; }
+
+        /* Points Section */
+        .why-choose-us {
+            margin-top: 60px;
+            background: var(--white);
+            padding: 40px;
+            border-radius: 20px;
+        }
+
+        .why-choose-us h2 {
+            text-align: center;
+            margin-bottom: 40px;
+        }
+
+        .points-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+        }
+
+        .point-item {
+            display: flex;
+            align-items: start;
+            gap: 10px;
+            padding: 15px;
+            border: 1px solid #ddd;
+            border-radius: 10px;
+        }
+
+        .point-item span {
+            color: var(--hot-orange);
+            font-size: 1.5rem;
+            font-weight: bold;
+        }
+
+        /* Button */
+        .cta-btn {
+            display: inline-block;
+            background-color: var(--hot-orange);
+            color: white;
+            padding: 15px 30px;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            margin-top: 20px;
+            transition: 0.3s;
+        }
+
+        .cta-btn:hover {
+            background-color: #e63e00;
+            transform: scale(1.05);
+        }
+
+        @media (max-width: 768px) {
+            .content-grid { grid-template-columns: 1fr; }
+            .about-hero h1 { font-size: 2.2rem; }
+        }
+    </style>
+</head>
+<body>
+
+<nav>
+        <div class="logo">Inform</div>
+        <div class="nav-links"> 
+            <a href="index.html">Home</a>
+            <a href="join.html">Join Us</a>
+            <a href="services.html">Services</a>
+        </div>
+    </nav>
+
+    <section class="about-hero">
+        <h1>About <span>Our Agency</span></h1>
+        <p>Build Better. Grow Digital. We grow your business in the digital world with the right strategies and creative solutions.</p>
+    </section>
+
+    <div class="container">
+        <div class="content-grid">
+            <div class="about-text">
+                <h2>Who We Are?</h2>
+                <p>We are a professional <strong>Digital Service Provider</strong> dedicated to helping small, medium, and growing businesses succeed in the digital world.</p>
+                <p>In today’s competitive market, being online is not enough. A strong strategy, consistent branding, and meaningful engagement are essential — and that’s exactly what we deliver.</p>
+                <a href="#" class="cta-btn">Get In Touch</a>
+            </div>
+
+            <div class="mission-box">
+                <h3>Our Mission 🚀</h3>
+                <p>Our mission is simple: <strong>To help your business grow digitally while you focus on what matters most.</strong></p>
+                <p>From social media management to complete digital marketing services, we work to grow your brand, increase engagement, and drive real results online.</p>
+            </div>
+        </div>
+
+        <section class="why-choose-us">
+            <h2>⭐ Why Choose Us</h2>
+            <div class="points-grid">
+                <div class="point-item">
+                    <span>✔</span>
+                    <p>Expert Social Media & Content Strategies</p>
+                </div>
+                <div class="point-item">
+                    <span>✔</span>
+                    <p>Result-Oriented Marketing Strategies</p>
+                </div>
+                <div class="point-item">
+                    <span>✔</span>
+                    <p>Creative and Consistent Brand Approach</p>
+                </div>
+                <div class="point-item">
+                    <span>✔</span>
+                    <p>Modern & Fast Website Solutions</p>
+                </div>
+            </div>
+        </section>
+    </div>
+
+</body>
+</html>

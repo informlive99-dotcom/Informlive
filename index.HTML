@@ -1,0 +1,271 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Informlive | Digital Services </title>
+    <style>
+        /* General Styles */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f4f4; /* color Background */
+            color: white;
+            overflow-x: hidden;
+        }
+
+        /* Navigation Bar */
+        nav {
+            display: flex;
+            justify-content: space-between;
+            padding: 25px 10%;
+            align-items: center;
+        }
+
+        /* --- Stylish Cursive Logo (Inform Style) --- */
+        .logo {
+            /* Mistral font image ke jaisa cursive look deta hai */
+            font-family: 'Mistral', 'Brush Script MT', cursive; 
+            font-size: 45px;
+            color: #ff6e00; /*  Orange color */
+            text-decoration: none;
+            cursor: pointer;
+            line-height: 1;
+        }
+
+        .nav-links a {
+            text-decoration: none;
+            color: #ff6e00;
+            margin-left: 25px;
+            font-size: 18px;
+            transition: 0.3s;
+	    font weight:900;
+        }
+
+        .nav-links a:hover {
+            color: #A9A9A9;
+        }
+
+        /* Hero Section */
+        .hero {
+            height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            /* Background par halka orange glow */
+            background: radial-gradient(circle at 50% 40%, rgba(255, 102, 0, 0.12) 0%, transparent 60%);
+            padding: 0 15px;
+        }
+
+        .hero h1 {
+            font-size: 4rem;
+            margin: 0;
+            font-weight: 800;
+            letter-spacing: -1px;
+        }
+
+        /* Slogan ka second part Orange mein */
+        .hero h1 span {
+            color: #ff6600;
+        }
+
+        .hero p {
+            font-size: 1.1rem;
+            color: #888;
+            max-width: 650px;
+            margin: 20px 0 40px 0;
+            line-height: 1.6;
+        }
+
+        /* Orange Button */
+        .btn-primary {
+            background-color: #ff6600;
+            color: white;
+            padding: 15px 40px;
+            border-radius: 50px;
+            text-decoration: none;
+            font-weight: bold;
+            font-size: 18px;
+            box-shadow: 0 10px 20px rgba(255, 102, 0, 0.3);
+            transition: 0.4s;
+        }
+
+        .btn-primary:hover {
+            background-color: #e65c00;
+            transform: scale(1.05);
+            box-shadow: 0 15px 25px rgba(255, 102, 0, 0.4);
+        }
+
+        .btn-secondary {
+            margin-top: 20px;
+            display: block;
+            color: #ff6600;
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 500;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 { font-size: 2.5rem; }
+            .nav-links { display: none; }
+        }
+
+
+/* Footer Main Container */
+        .main-footer {
+            background-color: #a3a3a3;
+            color: #ffffff;
+            padding: 80px 20px 30px 20px;
+            text-align: center;
+        }
+
+        .footer-grid {
+            max-width: 1000px;
+            margin: 0 auto;
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 40px;
+        }
+
+        /* Styling for Footer Note & Team */
+        .footer-box h3 {
+            color: #ff6e00; /* Your brand orange */
+            margin-bottom: 20px;
+            font-size: 22px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        .footer-box p {
+            line-height: 1.8;
+            color: #fff;
+            font-size: 15px;
+            margin: 0;
+        }
+
+        /* Social Media Icons Section */
+        .social-container {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 25px;
+        }
+
+        .social-icon {
+            fill: #ffffff; /* Icon Color */
+            transition: fill 0.3s ease, transform 0.3s ease;
+            display: inline-block;
+        }
+
+        .social-icon:hover {
+            fill: #ff5733; /* Hover Color */
+            transform: translateY(-5px);
+        }
+
+        /* Copyright Bar */
+        .copyright-bar {
+            margin-top: 50px;
+            border-top: 1px solid #333;
+            padding-top: 25px;
+            font-size: 14px;
+            color: #fff;
+        }
+
+        .brand-text {
+            color: #ff5733;
+            font-weight: bold;
+        }
+
+
+
+    </style>
+</head>
+<body>
+
+    <nav>
+        <div class="logo">Inform</div>
+        <div class="nav-links">
+            <a href="about.html">About</a>
+            <a href="join.html">Join Us</a>
+            <a href="services.html">Services</a>
+        </div>
+    </nav>
+
+    <section class="hero">
+        <h1>Digital Services Ki Nayi Duniya<br><span>Informlive.in</span></h1>
+        <p>We help you grow your social media and business with modern digital solutions. A fresh perspective, a better start.</p>
+        
+        <div class="btn-container">
+            <a href="services.html" class="btn-primary">Explore Now</a>
+        </div>
+        <a href="#" class="btn-secondary">Learn More</a>
+    </section>
+
+ <footer class="main-footer">
+        <div class="footer-grid">
+            
+            <div class="footer-box">
+                <h3>Informlive.in</h3>
+                <p>Welcome to <b>Digital Services Ki Nayi Duniya</b>. We specialize in providing fresh perspectives and modern digital solutions to help your business and social media presence thrive in the modern age.</p>
+            </div>
+
+            <div class="footer-box">
+                <h3>Our Team</h3>
+                <p>We are a dedicated group of digital experts, strategists, and creators. Together, we work tirelessly to ensure that every project we touch turns into a success story for our clients.</p>
+            </div>
+
+            <div class="footer-box">
+                <h3>Connect With Us</h3>
+                <div class="social-container">
+                    
+                    <a href="#" class="social-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/></svg>
+                    </a>
+
+                    <a href="#" class="social-icon">
+                       <svg width="28" height="28" viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 
+			3.584.012 4.85.07 	
+			3.252.148 4.771 1.691
+			 4.919 4.919	
+			.058 1.265.069 
+			1.645.069 4.849	
+			s-.011 3.585-.069 4.85
+			c-.149 3.225-1.664
+			 4.771-4.919 4.919	
+			-1.266.058-1.644.07-4.85.07
+			s-3.584-.012-4.849-.07
+			c-3.26-.149-4.771-1.699-4.919-4.92
+			-.058-1.265-.07-1.644-.07-4.849
+			s.012-3.584.07-4.849
+			c.149-3.227 
+                        1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948
+			s.014 3.667.072 4.947c.2 4.337 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072s3.667-.014 4.947-.072c4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948
+			s-.014-3.667-.072-4.947c-.196-4.354-2.617-6.78-6.979-6.98-1.281-.058-1.69-.072-4.949-.072zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163
+  			 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845
+			c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
+                    </a>
+
+                    <a href="https://x.com/einformlive" class="social-icon">
+                        <svg width="28" height="28" viewBox="0 0 24 24"><path d="M18.244 2.25h3.308l-7.227 8.26 8.502 11.24H16.17l-5.214-6.817L4.99 21.75H1.68l7.73-8.835L1.254 
+2.25H8.08l4.713 6.231zm-1.161 17.52h1.833L7.084 4.126H5.117z"/></svg>
+                    </a>
+
+                </div>
+            </div>
+
+        </div>
+
+        <div class="copyright-bar">
+            &copy; 2026 <span class="brand-text">Informlive.in</span>. Digital Services Ki Nayi Duniya. All rights reserved.
+        </div>
+    </footer>
+
+
+
+
+</body>
+</html>
